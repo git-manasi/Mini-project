@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brew &amp; Bean Cafe - fresh coffee, snacks and desserts.">
+  <title>Home | Brew &amp; Bean Cafe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo">☕ Brew<span>&amp;</span>Bean</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class='active'>Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html" class="cart-link">🛒 Order <b id="cartCount">0</b></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" title="Toggle dark mode" aria-label="Toggle theme">🌙</button>
+        <button id="menuBtn" class="icon-btn menu-btn" title="Menu" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="chip">🌿 Freshly brewed since 2020</span>
+          <h1>Where every <span class="accent">sip</span> feels like home.</h1>
+          <p class="lead">Handcrafted coffee, fresh bakes and cosy corners. Order online and pick up in minutes.</p>
+          <div class="btn-row">
+            <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+            <a href="about.html" class="btn btn-outline">Our Story</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="cup">☕</div>
+          <span class="float f1">🥐</span><span class="float f2">🍰</span><span class="float f3">🍫</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section special">
+      <div class="container">
+        <div class="special-card reveal">
+          <div class="special-emoji" id="specialEmoji">⭐</div>
+          <div>
+            <p class="kicker" id="specialDay">Today's Special</p>
+            <h2 id="specialName">Loading...</h2>
+            <p id="specialDesc"></p>
+            <p class="price" id="specialPrice"></p>
+            <button class="btn btn-primary" id="specialBtn">Add to Order</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <p class="kicker center reveal">Customer Favourites</p>
+        <h2 class="title reveal">Our <span class="accent">Bestsellers</span></h2>
+        <div id="featuredGrid" class="grid"></div>
+        <p class="center reveal"><a href="menu.html" class="btn btn-outline">See Full Menu →</a></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="kicker center reveal">Why Choose Us</p>
+        <h2 class="title reveal">Made <span class="accent">different</span></h2>
+        <div class="features">
+          <div class="feature reveal"><span>🌱</span><h3>Fresh Beans</h3><p>Single-origin beans roasted in small batches every week.</p></div>
+          <div class="feature reveal"><span>⚡</span><h3>Fast Pickup</h3><p>Order online and your coffee is ready when you arrive.</p></div>
+          <div class="feature reveal"><span>💚</span><h3>Eco Friendly</h3><p>Compostable cups and zero single-use plastic.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats-band">
+      <div class="container stats">
+        <div><h3><span class="counter" data-target="5000">0</span>+</h3><p>Happy Customers</p></div>
+        <div><h3><span class="counter" data-target="40">0</span>+</h3><p>Menu Items</p></div>
+        <div><h3><span class="counter" data-target="6">0</span></h3><p>Years Brewing</p></div>
+        <div><h3><span class="counter" data-target="4">0</span>.8★</h3><p>Average Rating</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="kicker center reveal">Testimonials</p>
+        <h2 class="title reveal">What people <span class="accent">say</span></h2>
+        <div class="slider reveal">
+          <blockquote id="quoteText"></blockquote>
+          <p id="quoteBy" class="quote-by"></p>
+          <div class="dots" id="quoteDots"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>☕ Brew&amp;Bean</h3>
+        <p>Freshly roasted coffee and warm snacks, made with love.</p>
+        <p id="openStatus" class="status"></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit Us</h4>
+        <p>📍 12 Coffee Street, Ghaziabad</p>
+        <p>📞 +91 98765 43210</p>
+        <p>🕗 Daily 8:00 AM – 10:00 PM</p>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="year"></span> Brew &amp; Bean Cafe · Mini Project by <b>MANASI</b> (HTML, CSS &amp; JavaScript)</p>
+  </footer>
+
+  <button id="toTop" class="to-top" title="Back to top" aria-label="Back to top">↑</button>
+  <div id="toast" class="toast"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>

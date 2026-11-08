@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brew &amp; Bean Cafe - fresh coffee, snacks and desserts.">
+  <title>Gallery | Brew &amp; Bean Cafe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo">☕ Brew<span>&amp;</span>Bean</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html" class='active'>Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html" class="cart-link">🛒 Order <b id="cartCount">0</b></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" title="Toggle dark mode" aria-label="Toggle theme">🌙</button>
+        <button id="menuBtn" class="icon-btn menu-btn" title="Menu" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-banner"><div class="container"><h1>Our <span class="accent">Gallery</span></h1><p>A peek into our cafe. Click any picture to enlarge.</p></div></section>
+
+    <section class="section">
+      <div class="container">
+        <div id="galleryGrid" class="gallery"></div>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox hidden">
+      <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+      <div class="lb-content" id="lbContent"></div>
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>☕ Brew&amp;Bean</h3>
+        <p>Freshly roasted coffee and warm snacks, made with love.</p>
+        <p id="openStatus" class="status"></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit Us</h4>
+        <p>📍 12 Coffee Street, Ghaziabad</p>
+        <p>📞 +91 98765 43210</p>
+        <p>🕗 Daily 8:00 AM – 10:00 PM</p>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="year"></span> Brew &amp; Bean Cafe · Mini Project by <b>MANASI</b> (HTML, CSS &amp; JavaScript)</p>
+  </footer>
+
+  <button id="toTop" class="to-top" title="Back to top" aria-label="Back to top">↑</button>
+  <div id="toast" class="toast"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>

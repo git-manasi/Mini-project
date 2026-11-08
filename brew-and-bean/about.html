@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brew &amp; Bean Cafe - fresh coffee, snacks and desserts.">
+  <title>About | Brew &amp; Bean Cafe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo">☕ Brew<span>&amp;</span>Bean</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class='active'>About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html" class="cart-link">🛒 Order <b id="cartCount">0</b></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" title="Toggle dark mode" aria-label="Toggle theme">🌙</button>
+        <button id="menuBtn" class="icon-btn menu-btn" title="Menu" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-banner"><div class="container"><h1>About <span class="accent">Us</span></h1><p>A small cafe with a big love for coffee.</p></div></section>
+
+    <section class="section">
+      <div class="container two-col">
+        <div class="reveal">
+          <h2>Our Story</h2>
+          <p>Brew &amp; Bean started in 2020 as a tiny corner stall with one espresso machine and a big dream: to make great coffee feel friendly and affordable.</p>
+          <p>Today we serve thousands of cups every month, but we still roast in small batches, bake fresh every morning and greet every guest by name.</p>
+          <a href="menu.html" class="btn btn-primary">Taste Our Menu</a>
+        </div>
+        <div class="story-art reveal">☕🌿<small>Est. 2020</small></div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2 class="title reveal">Our <span class="accent">Values</span></h2>
+        <div class="features">
+          <div class="feature reveal"><span>🤝</span><h3>Community</h3><p>A warm space for students, freelancers and friends.</p></div>
+          <div class="feature reveal"><span>🏅</span><h3>Quality</h3><p>Only the best beans, milk and ingredients.</p></div>
+          <div class="feature reveal"><span>🌍</span><h3>Sustainability</h3><p>Responsible sourcing and less waste, always.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col top">
+        <div class="timeline reveal">
+          <h2>Our Journey</h2>
+          <div class="t-item"><i></i><b>2020</b><p>Opened our first coffee stall</p></div>
+          <div class="t-item"><i></i><b>2022</b><p>Moved to our own cosy cafe</p></div>
+          <div class="t-item"><i></i><b>2024</b><p>Launched online ordering</p></div>
+          <div class="t-item"><i></i><b>2026</b><p>Served 5000+ happy customers</p></div>
+        </div>
+        <div class="reveal">
+          <h2>Meet the Team</h2>
+          <div id="teamGrid" class="team"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>☕ Brew&amp;Bean</h3>
+        <p>Freshly roasted coffee and warm snacks, made with love.</p>
+        <p id="openStatus" class="status"></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit Us</h4>
+        <p>📍 12 Coffee Street, Ghaziabad</p>
+        <p>📞 +91 98765 43210</p>
+        <p>🕗 Daily 8:00 AM – 10:00 PM</p>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="year"></span> Brew &amp; Bean Cafe · Mini Project by <b>MANASI</b> (HTML, CSS &amp; JavaScript)</p>
+  </footer>
+
+  <button id="toTop" class="to-top" title="Back to top" aria-label="Back to top">↑</button>
+  <div id="toast" class="toast"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
